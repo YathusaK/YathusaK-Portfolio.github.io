@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       observer.observe(section);
     });
   
-    // Scatter images randomly 
+    // Scatter images randomly my fav so far everytime I reload its something different
     const images = document.querySelectorAll(".scattered-img");
   
     images.forEach(img => {
@@ -31,4 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       img.style.setProperty('--left', `${left}%`);
     });
   });
+
+//learned you cannot use the same 'function' separately but must be added together to avoid errors
   
